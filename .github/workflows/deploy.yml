@@ -1,0 +1,14 @@
+name: Deploy
+on:
+Ingeniería de Software II
+ push:
+ branches:
+ - main
+jobs:
+ deploy:
+ runs-on: ubuntu-latest
+ steps:
+ - uses: actions/checkout@v2
+ - name: Deploy to Server
+ run: echo "Desplegando versión nueva..."
+
